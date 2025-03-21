@@ -14,6 +14,8 @@ export default function Professional() {
 		<section className="section">
 			<h2>Professional Experience</h2>
 			<Form fields={fields} />
+			<Form fields={fields} />
+			<Form fields={fields} />
 		</section>
 	);
 }

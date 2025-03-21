@@ -13,6 +13,8 @@ export default function Education() {
 		<section className="section">
 			<h2>Education</h2>
 			<Form fields={fields} />
+			<Form fields={fields} />
+			<Form fields={fields} />
 		</section>
 	);
 }
