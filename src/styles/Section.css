@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+}
+
+.section,
+.fields {
+	display: flex;
+	flex-direction: column;
+}
+
+.fields > label {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	align-items: center;
+}
+
+.edit-btn {
+	align-self: flex-end;
+}

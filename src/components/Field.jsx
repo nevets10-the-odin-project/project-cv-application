@@ -5,16 +5,14 @@ export default function Field({ name, type = "text", isEdit }) {
 
 	if (isEdit) {
 		return (
-			<div>
-				<label>
-					{name}:{" "}
-					<input
-						type={type}
-						value={value}
-						onChange={(e) => setValue(e.target.value)}
-					/>
-				</label>
-			</div>
+			<label>
+				<p>{name}: </p>
+				<input
+					type={type}
+					value={value}
+					onChange={(e) => setValue(e.target.value)}
+				/>
+			</label>
 		);
 	} else {
 		return (

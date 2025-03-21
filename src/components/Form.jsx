@@ -9,14 +9,21 @@ export default function Form({ title, fields }) {
 	}
 
 	return (
-		<div>
-			<h1>{title}</h1>
-			{fields.map((field) => (
-				<Field key={field.id} name={field.name} type={field.type} isEdit={isEdit} />
-			))}
-			<button type="button" onClick={handleIsEdit}>
+		<>
+			<div className="fields">
+				<h1>{title}</h1>
+				{fields.map((field) => (
+					<Field
+						key={field.id}
+						name={field.name}
+						type={field.type}
+						isEdit={isEdit}
+					/>
+				))}
+			</div>
+			<button className="edit-btn" type="button" onClick={handleIsEdit}>
 				{isEdit ? "Save" : "Edit"}
 			</button>
-		</div>
+		</>
 	);
 }
