@@ -11,7 +11,8 @@ export default function Education() {
 
 	return (
 		<section className="section">
-			<Form title={"Education"} fields={fields} />
+			<h2>Education</h2>
+			<Form fields={fields} />
 		</section>
 	);
 }

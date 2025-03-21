@@ -10,7 +10,8 @@ export default function General() {
 
 	return (
 		<section className="section">
-			<Form title={"General Information"} fields={fields} />
+			<h2>General Information</h2>
+			<Form fields={fields} />
 		</section>
 	);
 }

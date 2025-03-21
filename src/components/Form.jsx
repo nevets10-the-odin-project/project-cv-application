@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Field from "./Field";
 
-export default function Form({ title, fields }) {
+export default function Form({ fields }) {
 	const [isEdit, setIsEdit] = useState(true);
 
 	function handleIsEdit() {
@@ -11,7 +11,6 @@ export default function Form({ title, fields }) {
 	return (
 		<>
 			<div className="fields">
-				<h2>{title}</h2>
 				{fields.map((field) => (
 					<Field
 						key={field.id}

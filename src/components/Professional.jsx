@@ -12,7 +12,8 @@ export default function Professional() {
 
 	return (
 		<section className="section">
-			<Form title={"Professional Experience"} fields={fields} />
+			<h2>Professional Experience</h2>
+			<Form fields={fields} />
 		</section>
 	);
 }
