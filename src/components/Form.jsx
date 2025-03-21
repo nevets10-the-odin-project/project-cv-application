@@ -11,7 +11,7 @@ export default function Form({ title, fields }) {
 	return (
 		<>
 			<div className="fields">
-				<h1>{title}</h1>
+				<h2>{title}</h2>
 				{fields.map((field) => (
 					<Field
 						key={field.id}
