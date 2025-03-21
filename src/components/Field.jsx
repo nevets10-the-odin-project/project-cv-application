@@ -3,11 +3,13 @@ import React from "react";
 export default function Field({ name, type = "text", isEdit }) {
 	if (isEdit) {
 		return (
-			<label>
-				{name}: <input type={type} />
-			</label>
+			<div>
+				<label>
+					{name}: <input type={type} />
+				</label>
+			</div>
 		);
 	} else {
-		return <p>{name}: </p>;
+		return <div>{name}: </div>;
 	}
 }
