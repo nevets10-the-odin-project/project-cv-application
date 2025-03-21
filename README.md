@@ -20,6 +20,12 @@ Congratulations, you have made it to the very first React project. In this proje
 
 ---
 
+## Post-project review
+
+I'm not going to spend a whole lot of time on the details. This is the first React project, so it's about the basics, and I want to continue. I've only used React in one project, so this still took some time to get right. I think it turned out alright.
+
+---
+
 ## Brainstorming
 
 Inputs could be combined with labels to make larger, reusable components. Those larger components can be combined into sections. Since this is my first project, I'm just gonna wing it. I've build an app before with React, so I'm not entirely new to it.
