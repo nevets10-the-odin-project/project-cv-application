@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Field from "./Field";
 
-export default function Form({ title }) {
+export default function Form({ title, fields }) {
 	const [isEdit, setIsEdit] = useState(true);
 
 	function handleIsEdit() {
@@ -11,9 +11,9 @@ export default function Form({ title }) {
 	return (
 		<div>
 			<h1>{title}</h1>
-			<Field name={"Name"} isEdit={isEdit} />
-			<Field name={"email"} type={"email"} isEdit={isEdit} />
-			<Field name={"Phone Number"} type={"number"} isEdit={isEdit} />
+			{fields.map((field) => (
+				<Field key={field.id} name={field.name} type={field.type} isEdit={isEdit} />
+			))}
 			<button type="button" onClick={handleIsEdit}>
 				{isEdit ? "Save" : "Edit"}
 			</button>
