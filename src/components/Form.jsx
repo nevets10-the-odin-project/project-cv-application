@@ -11,19 +11,12 @@ export default function Form({ title }) {
 	return (
 		<div>
 			<h1>{title}</h1>
-			<Field name={"Name"} isEdit={isEdit} onEdit={handleIsEdit} />
-			<Field
-				name={"email"}
-				type={"email"}
-				isEdit={isEdit}
-				onSubmit={handleIsEdit}
-			/>
-			<Field
-				name={"Phone Number"}
-				type={"number"}
-				isEdit={isEdit}
-				onSubmit={handleIsEdit}
-			/>
+			<Field name={"Name"} isEdit={isEdit} />
+			<Field name={"email"} type={"email"} isEdit={isEdit} />
+			<Field name={"Phone Number"} type={"number"} isEdit={isEdit} />
+			<button type="button" onClick={handleIsEdit}>
+				{isEdit ? "Save" : "Edit"}
+			</button>
 		</div>
 	);
 }
