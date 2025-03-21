@@ -1,3 +1,4 @@
+import "../styles/Section.css";
 import Form from "./Form";
 
 export default function Professional() {
@@ -10,8 +11,8 @@ export default function Professional() {
 	];
 
 	return (
-		<div>
+		<section className="section">
 			<Form title={"Professional Experience"} fields={fields} />
-		</div>
+		</section>
 	);
 }

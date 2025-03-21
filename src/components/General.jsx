@@ -1,3 +1,4 @@
+import "../styles/Section.css";
 import Form from "./Form";
 
 export default function General() {
@@ -8,8 +9,8 @@ export default function General() {
 	];
 
 	return (
-		<div>
+		<section className="section">
 			<Form title={"General Information"} fields={fields} />
-		</div>
+		</section>
 	);
 }
